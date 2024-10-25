@@ -1,109 +1,89 @@
-/* General Body Styling */
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Background */
 body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    background-color: #f0f2f5;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background: #f4f4f4;
 }
 
-/* Header Styling */
+/* Header Styles */
 header {
-    background-color: #007acc;
-    color: white;
-    padding: 1.5em;
+    background: #4CAF50;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-header h1 {
-    margin: 0;
+/* Navigation Styles */
+nav {
+    background: #333;
 }
 
-/* Navigation Menu */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    gap: 1em;
-    background-color: #005b9f;
-    padding: 1em;
-    justify-content: center;
+    list-style: none;
+    padding: 10px 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
 }
 
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-/* Section Styling */
+/* Section Styles */
 section {
-    width: 80%;
-    max-width: 800px;
-    padding: 2em;
-    margin: 1em 0;
-    background-color: white;
+    padding: 20px;
+    margin: 15px 0;
+    background: #fff;
     border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
-/* Card Styling */
+/* Card Container Styles */
 .card-container {
     display: flex;
     justify-content: center;
-    margin: 1em 0;
 }
 
+/* Card Styles */
 .card {
-    background-color: #fff;
-    padding: 1.5em;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+    width: 80%;
     max-width: 600px;
-    width: 100%;
-    text-align: center;
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    transition: 0.3s ease;
-}
-
-/* Footer Styling */
+/* Footer Styles */
 footer {
-    background-color: #007acc;
-    color: white;
     text-align: center;
-    padding: 1em;
-    width: 100%;
-    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
-    position: fixed;
+    padding: 15px 0;
+    background: #333;
+    color: #fff;
+    position: relative;
     bottom: 0;
+    width: 100%;
 }
 
-/* Heading and Text Styling */
-h1, h2 {
-    color: #333;
-}
-
-h2 {
-    margin-top: 0;
-}
-
-/* Responsive Styling */
+/* Responsive Styles */
 @media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        padding: 0;
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .card {
+        width: 90%;
     }
 }
